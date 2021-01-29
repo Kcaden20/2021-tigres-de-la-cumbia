@@ -1,0 +1,75 @@
+@keyframes bob{0%{top:0;}50%{top:0.2em;} 100%{top: 0em}}
+
+@font-face {
+	font-family: Feels-Fuzzy;
+	src: url(../assets/fonts/FeeeelsFuzzyRegular.ttf);
+	src: url(../assets/fonts/FeeeelsFuzzyRegular.woff);
+	src: url(../assets/fonts/FeeeelsFuzzyRegular.woff2);
+ }
+
+ @font-face {
+    font-family: 'misterpixel';
+    src: url('../assets/fonts/mister_pixel_regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/mister_pixel_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+        background: url(../assets/background.jpg);
+        background-size: 100vw auto;
+        text-align: center;
+    }
+
+    h1 {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3em;
+        font-family: Feels-Fuzzy;
+    } 
+    #left, #right {
+		top: 0; bottom: 0;
+		width: 30px;
+		}
+		#left { left: 0; background: url(../assets/tiles-l.png); }
+		#right { right: 0; background: url(../assets/tiles-r.png); }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 30px;
+		}
+		#top { top: 0; background: url(../assets/tiles-t.png); }
+        #bottom { bottom: 0; background: url(../assets/tiles-b.png);}
+        
+        #top, #bottom, #left, #right {
+            background-size: contain;
+            position: fixed;
+            }
+
+.tigres {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-end;
+}
+
+#tigre-uno {
+    background: url(../assets/tiger_one.gif);
+}
+
+#tigre-dos {
+    background: url(../assets/tiger_two.gif);
+}
+
+#tigre-uno, #tigre-dos {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.tigres div {
+    height: 500px;
+    width: 500px;
+}
