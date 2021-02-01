@@ -112,13 +112,20 @@ box-shadow: 6px 10px 24px 1px rgba(0,0,0,0.75);
 }
 
 
-#tigre-dos:hover, .tigre-dos-active {
+#tigre-dos:hover {
+    background: url(../assets/tiger_two_active.png);
+}
+
+.tigre-dos-active {
     background: url(../assets/tiger_two_active.png) !important;
 }
 
-#tigre-uno:hover,.tigre-uno-active {
-    background: url(../assets/Tiger_one_active.png) !important;
+#tigre-uno:hover{
+    background: url(../assets/Tiger_one_active.png);
+}
 
+.tigre-uno-active { 
+    background: url(../assets/Tiger_one_active.png) !important;
 }
 
 #tigre-uno, #tigre-dos, #tigre-dos:hover, #tigre-uno:hover  {
@@ -128,6 +135,7 @@ box-shadow: 6px 10px 24px 1px rgba(0,0,0,0.75);
     background-position-x: center !important;
 }
 
+
 #tigre-dos:hover, #tigre-uno:hover  {
     cursor: pointer;
 }
@@ -136,11 +144,6 @@ box-shadow: 6px 10px 24px 1px rgba(0,0,0,0.75);
     width: 400px;
     
 } 
-
-.slide-down {
-    transform: translateY(5%);
-}
-
 @media only screen and (max-width: 1100px) {
  }
 
@@ -162,4 +165,12 @@ box-shadow: 6px 10px 24px 1px rgba(0,0,0,0.75);
     
 } 
 
+}
+
+.slide-down-uno {
+    background: url(../assets/Tiger_one_active-mouse-down.png) !important; 
+}
+
+.slide-down-dos {
+    background: url(../assets/Tiger_two_active-mouse-down.png) !important; 
 }

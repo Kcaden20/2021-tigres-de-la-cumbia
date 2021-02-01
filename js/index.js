@@ -6,19 +6,19 @@ var isPlayingUno = false;
 var isPlayingDos = false;
 
 function pressDown(){
-    tigreUno.classList.add('slide-down');
+    tigreUno.classList.add('slide-down-uno');
 }
 
 function pressUp() {
-    tigreUno.classList.remove('slide-down');
+    tigreUno.classList.remove('slide-down-uno');
 }
 
 function pressDownDos(){
-    tigreDos.classList.add('slide-down');
+    tigreDos.classList.add('slide-down-dos');
 }
 
 function pressUpDos() {
-    tigreDos.classList.remove('slide-down');
+    tigreDos.classList.remove('slide-down-dos');
 }
 
 function togglePlay() {
