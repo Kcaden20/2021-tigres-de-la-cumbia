@@ -5,6 +5,21 @@ var AudioDos = document.getElementById('audio-dos');
 var isPlayingUno = false;
 var isPlayingDos = false;
 
+function pressDown(){
+    tigreUno.classList.add('slide-down');
+}
+
+function pressUp() {
+    tigreUno.classList.remove('slide-down');
+}
+
+function pressDownDos(){
+    tigreDos.classList.add('slide-down');
+}
+
+function pressUpDos() {
+    tigreDos.classList.remove('slide-down');
+}
 
 function togglePlay() {
     isPlayingUno ? AudioUno.pause() : AudioUno.play();
@@ -22,7 +37,6 @@ AudioUno.onpause = function() {
     isPlayingUno = false; 
     tigreUno.classList.remove('tigre-uno-active');
 }
-
 
 
 function togglePlayDos() {

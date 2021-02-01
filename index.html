@@ -22,8 +22,8 @@
     <p>Click on Los Tigres Below and Each One Will Play You A Tune! Click Again to Pause.</p>
   </div>
     <div class="tigres">
-        <div id="tigre-dos" onclick="togglePlayDos()" ></div>
-        <div id="tigre-uno" onclick="togglePlay()"></div>
+        <div id="tigre-dos" onmousedown="pressDownDos()" onmouseup="pressUpDos()" onclick="togglePlayDos()" ></div>
+        <div id="tigre-uno" onmousedown="pressDown()" onmouseup="pressUp()" onclick="togglePlay()"></div>
     </div>
 
     <audio id="audio-uno">
