@@ -12,11 +12,14 @@ function togglePlay() {
 
 AudioUno.onplaying = function() {
     isPlayingUno = true;
+    AudioDos.pause()
+    AudioDos.currentTime = 0;
     tigreUno.classList.add('tigre-uno-active');
 }
 
 AudioUno.onpause = function() {
     isPlayingUno = false; 
+    isPlayingDos = false; 
     tigreUno.classList.remove('tigre-uno-active');
 }
 
@@ -28,11 +31,14 @@ function togglePlayDos() {
 
 AudioDos.onplaying = function() {
     isPlayingDos = true;
+    AudioUno.pause()
+    AudioUno.currentTime = 0;
     tigreDos.classList.add('tigre-dos-active');
 }
 
 AudioDos.onpause = function() {
     isPlayingDos = false; 
+    isPlayingUno = false; 
     tigreDos.classList.remove('tigre-dos-active');
 }
 
