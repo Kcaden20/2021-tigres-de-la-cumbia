@@ -35,18 +35,6 @@ body {
         overflow: hidden;
     }
 
-    h1 {
-        font-size: 5em;
-    } 
-
-    h2 {
-        font-size: 2em;
-    }
-
-    h3, p {
-        font-size: 1.5em;
-    }
-
     h1, h2, h3, p{
     font-family: Feels-Fuzzy;
     background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
@@ -73,7 +61,6 @@ body {
         text-align: center;
         vertical-align: middle;
         position: relative;
-        z-index: 100;
         user-select: none;
         color: black;
         background-color: white;
@@ -102,9 +89,9 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100%;
-    height: 95%;
+    height: 50%;
     align-items: flex-end;
 }
 
@@ -116,11 +103,13 @@ body {
     background: url(../assets/tiger_two.gif);
 }
 
-#tigre-dos:hover {
+
+
+#tigre-dos:hover, .tigre-dos-active {
     background: url(../assets/tiger_two_active.png) !important;
 }
 
-#tigre-uno:hover {
+#tigre-uno:hover,.tigre-uno-active {
     background: url(../assets/Tiger_one_active.png) !important;
 
 }
@@ -136,25 +125,13 @@ body {
     cursor: pointer;
 }
 .tigres div {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     
 } 
 
 
 @media only screen and (max-width: 1100px) {
-    h1 {
-        font-size: 3.5em;
-    } 
-
-    h2 {
-        font-size: 1.75em;
-    }
-
-    h3, p {
-        font-size: 1.25em;
-    }
-
  }
 
 @media only screen and (max-width: 900px) {
@@ -168,16 +145,6 @@ body {
 
 
 @media only screen and (max-width: 500px) {
-h1 {
-    font-size: 3em;
-} 
-h2 {
-    font-size: 1.5em;
-}
-
-h3, p {
-    font-size: 1em;
-}
 
 .tigres div {
     height: 250px;

@@ -12,12 +12,12 @@ function togglePlay() {
 
 AudioUno.onplaying = function() {
     isPlayingUno = true;
-    tigreUno.style.background = 'url(../assets/tiger_one_active.png)';
+    tigreUno.classList.add('tigre-uno-active');
 }
 
 AudioUno.onpause = function() {
     isPlayingUno = false; 
-    tigreUno.style.background = 'url(../assets/tiger_one.gif)';
+    tigreUno.classList.remove('tigre-uno-active');
 }
 
 
@@ -28,12 +28,12 @@ function togglePlayDos() {
 
 AudioDos.onplaying = function() {
     isPlayingDos = true;
-    tigreDos.style.background = 'url(../assets/tiger_two_active.png)';
+    tigreDos.classList.add('tigre-dos-active');
 }
 
 AudioDos.onpause = function() {
     isPlayingDos = false; 
-    tigreDos.style.background = 'url(../assets/tiger_two.gif)';
+    tigreDos.classList.remove('tigre-dos-active');
 }
 
 // function togglePlay() {
