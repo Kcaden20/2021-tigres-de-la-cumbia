@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Los Tigres De La Cumbia</title>
+  <title>¡Los Tigres De La Cumbia!</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -15,11 +15,23 @@
         <div id="top"></div>
         <div id="bottom"></div>
     </div>
-    <h1>Los Tigres De La Cumbia</h1>
+    <div class="text">
+    <h1>¡Los Tigres De La Cumbia!</h1>
+    <a href="http://kevincadena.com/"><h2>By Kevin Cadena</h2></a>
+    <a href="http://colomito.net/"><h3>Colo-Mitolo-Gital Out Now</h3></a>
+    <p>Click on Los Tigres Below and Each Will Sing You A Tune!</p>
+  </div>
     <div class="tigres">
-        <div id="tigre-dos"></div>
-        <div id="tigre-uno"></div>
+        <div id="tigre-dos" onclick="togglePlayDos()" ></div>
+        <div id="tigre-uno" onclick="togglePlay()"></div>
     </div>
+
+    <audio id="audio-uno">
+      <source src="assets/audio/cumbia-uno.mp3">
+    </audio>
+    <audio id="audio-dos">
+      <source src="assets/audio/cumbia-dos.mp3">
+    </audio>
   <script src="js/index.js"></script>
 </body>
 </html>
